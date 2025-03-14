@@ -15,6 +15,15 @@ void print(int n,int *arr){
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
+    printf("\n");
+}
+
+void sum(int n,int *arr){
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+    }
+    printf("The sum of elements in the array is %d\n",sum);
 }
 
 int main() {
@@ -26,6 +35,6 @@ int main() {
     
     input(num1,arr);
     print(num1,arr);
-    
+    sum(num1,arr);
     return 0;
 }
