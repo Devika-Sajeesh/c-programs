@@ -1,6 +1,6 @@
 /*************************************************
-Program Name: fact.c
-Aim			: To print factorial
+Program Name: halfpyramid.c
+Aim			: To print half pyramis
 Author		: Devika Sajeesh
 Date Written: 10/02/2025 
 **************************************************/
@@ -17,9 +17,18 @@ void main(){
 	scanf("%d",&num);
 	
 	//for loop
-	for (int i=num;i>0;i--){
-		fact*=i;
+	for (int i=1;i<=num;i++){
+		for(int j=1;j<=i;j++){
+			printf("*");
+		}
+		printf("\n");
 		
 	}
-	printf("factorial = %d\n",fact);
+	for (int i=1;i<=num;i++){
+		for(int j=1;j<=i;j++){
+			printf("%d",j);
+		}
+		printf("\n");
+		
+	}
 }
